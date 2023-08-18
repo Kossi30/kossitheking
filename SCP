@@ -1,0 +1,8 @@
+Central Logging - SCP, Guardrails
+
+
+AC1: SCP terraform code created and deployed to ensure logs cannot be disabled, deleted or tampered with. 
+
+AC2: Determine which Control Tower Guardrails are needed for central logging.
+
+AC3 : conditional deny rule - specific role can override.
