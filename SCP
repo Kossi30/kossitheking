@@ -6,3 +6,5 @@ AC1: SCP terraform code created and deployed to ensure logs cannot be disabled, 
 AC2: Determine which Control Tower Guardrails are needed for central logging.
 
 AC3 : conditional deny rule - specific role can override.
+
+TSS and NIST controls that relate to the Centralized audit logging documented and configurations identified in code to make resources compliant. Links to bank std retention policy for logs. Enforce retention in configuration (s3 bucket lifecycle policy has maximum retention period move the logs into glacier / Infrequent Access - follow industry best practice).
