@@ -11,18 +11,23 @@ TSS and NIST controls that relate to the Centralized audit logging documented an
 https://www.perplexity.ai/search/c5e30c3c-0ea8-4df5-bd13-7de1e4530954?s=u
 
 
-Statement:
-  - Sid: DenyLogModification
-    Effect: Deny
-    Action:
-      - logs:DeleteLogGroup
-      - logs:DeleteLogStream
-      - logs:DisassociateKmsKey
-      - logs:PutRetentionPolicy
-      - logs:StopQuery
-      - logs:UpdateLogDelivery
-      - logs:UpdateLogGroup
-      - logs:UpdateLogStream
-      - logs:UpdateMetricFilter
-      - logs:UpdateSubscriptionFilter
-    Resource: "*"
+## Deny Log Modification
+
+This statement denies specific actions related to AWS CloudWatch Logs to ensure the integrity and availability of logs.
+
+- **Effect:** Deny
+
+- **Actions Denied:**
+  - `logs:DeleteLogGroup`
+  - `logs:DeleteLogStream`
+  - `logs:DisassociateKmsKey`
+  - `logs:PutRetentionPolicy`
+  - `logs:StopQuery`
+  - `logs:UpdateLogDelivery`
+  - `logs:UpdateLogGroup`
+  - `logs:UpdateLogStream`
+  - `logs:UpdateMetricFilter`
+  - `logs:UpdateSubscriptionFilter`
+
+- **Resource:** All resources (`"*"`)
+
