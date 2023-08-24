@@ -9,3 +9,20 @@ AC3 : conditional deny rule - specific role can override.
 
 TSS and NIST controls that relate to the Centralized audit logging documented and configurations identified in code to make resources compliant. Links to bank std retention policy for logs. Enforce retention in configuration (s3 bucket lifecycle policy has maximum retention period move the logs into glacier / Infrequent Access - follow industry best practice).
 https://www.perplexity.ai/search/c5e30c3c-0ea8-4df5-bd13-7de1e4530954?s=u
+
+
+Statement:
+  - Sid: DenyLogModification
+    Effect: Deny
+    Action:
+      - logs:DeleteLogGroup
+      - logs:DeleteLogStream
+      - logs:DisassociateKmsKey
+      - logs:PutRetentionPolicy
+      - logs:StopQuery
+      - logs:UpdateLogDelivery
+      - logs:UpdateLogGroup
+      - logs:UpdateLogStream
+      - logs:UpdateMetricFilter
+      - logs:UpdateSubscriptionFilter
+    Resource: "*"
