@@ -51,7 +51,21 @@ OpenSearch (Elasticsearch):
 
 [CT.OPENSEARCH.PR.7] Require an Amazon OpenSearch Service domain to have fine-grained access control enabled
 RDS:
+Security Groups and Network ACLs:
 
+[CT.NETSEC.PR.1] Require Security Groups to have least privilege rules
+[CT.NETSEC.PR.2] Require Network ACLs to have appropriate rules defined
+IAM:
+
+[CT.IAM.PR.1] Require IAM password policies to meet specific complexity requirements
+[CT.IAM.PR.2] Require multi-factor authentication (MFA) for IAM users with console access
+VPC:
+
+[CT.VPC.PR.1] Require Amazon VPCs to have appropriate route tables and subnets configured
+[CT.VPC.PR.2] Require Amazon VPC peering connections to use secure configurations
+CloudFormation:
+
+[CT.CFN.PR.1] Require CloudFormation stacks to have termination protection enabled
 [CT.RDS.PR.3] Require an Amazon RDS database instance to have automatic backups enabled
 ... (and others related to specific service configurations)
 These guardrails focus on individual account configurations, such as enabling logging, tracing, and monitoring for specific services within each spoke account.
