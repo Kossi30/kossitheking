@@ -6,70 +6,7 @@ Spoke- AC2: Determine which Control Tower Guardrails are needed for central logg
 
 
 
-Spoke Accounts:
-Guardrails that are often applicable to spoke accounts are those that deal with specific resource configurations within each account. These guardrails help ensure that individual accounts follow best practices for logging, monitoring, and security:
-
-[CT.APIGATEWAY.PR.1] Require an Amazon API Gateway REST and WebSocket API to have logging activated
-[CT.APIGATEWAY.PR.2] Require an Amazon API Gateway REST API stage to have AWS X-Ray tracing activated
-[CT.CLOUDWATCH.PR.1] Require an Amazon CloudWatch alarm to have an action configured for the alarm state
-[CT.CLOUDWATCH.PR.4] Require an Amazon CloudWatch alarm to have actions activated
-[CT.EC2.PR.10] Require Amazon EC2 launch templates to have Amazon CloudWatch detailed monitoring activated
-API Gateway:
-
-[CT.APIGATEWAY.PR.3] Require an Amazon API Gateway REST API to have CloudWatch metrics enabled
-[CT.APIGATEWAY.PR.6] Require an Amazon API Gateway V2 stage to have AWS X-Ray tracing activated
-CloudWatch:
-
-[CT.CLOUDWATCH.PR.2] Require an Amazon CloudWatch metric filter and alarm to be created for a high-security risk event
-EC2:
-
-[CT.EC2.PR.3] Require an Amazon EC2 instance to be associated with an IAM role
-ECS:
-
-[CT.ECS.PR.6] Require an Amazon ECS cluster to have CloudWatch Container Insights enabled
-[CT.ECS.PR.8] Require an Amazon ECS task definition to specify resource limits
-S3:
-
-[CT.S3.PR.1] Require an Amazon S3 bucket to have server-side encryption enabled
-[CT.S3.PR.3] Require an Amazon S3 bucket to have public access blocked
-Redshift:
-
-[CT.REDSHIFT.PR.1] Require an Amazon Redshift cluster to have audit logging configured
-Lambda:
-
-[CT.LAMBDA.PR.1] Require an AWS Lambda function to have a CloudWatch alarm triggered on high error rates
-Elastic Beanstalk:
-
-[CT.ELASTICBEANSTALK.PR.1] Require an AWS Elastic Beanstalk environment to have enhanced health reporting enabled
-CloudFront:
-
-[CT.CLOUDFRONT.PR.1] Require an Amazon CloudFront distribution to have access logging enabled
-Step Functions:
-
-[CT.STEPFUNCTIONS.PR.3] Require an AWS Step Functions state machine to have AWS X-Ray tracing activated
-OpenSearch (Elasticsearch):
-
-[CT.OPENSEARCH.PR.7] Require an Amazon OpenSearch Service domain to have fine-grained access control enabled
-RDS:
-Security Groups and Network ACLs:
-
-[CT.NETSEC.PR.1] Require Security Groups to have least privilege rules
-[CT.NETSEC.PR.2] Require Network ACLs to have appropriate rules defined
-IAM:
-
-[CT.IAM.PR.1] Require IAM password policies to meet specific complexity requirements
-[CT.IAM.PR.2] Require multi-factor authentication (MFA) for IAM users with console access
-VPC:
-
-[CT.VPC.PR.1] Require Amazon VPCs to have appropriate route tables and subnets configured
-[CT.VPC.PR.2] Require Amazon VPC peering connections to use secure configurations
-CloudFormation:
-
-[CT.CFN.PR.1] Require CloudFormation stacks to have termination protection enabled
-[CT.RDS.PR.3] Require an Amazon RDS database instance to have automatic backups enabled
-... (and others related to specific service configurations)
-These guardrails focus on individual account configurations, such as enabling logging, tracing, and monitoring for specific services within each spoke account.
-
+[CT.S3.PR.2] Require an Amazon S3 bucket to have server access logging configured
 
 
 
