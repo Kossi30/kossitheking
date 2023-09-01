@@ -4,7 +4,8 @@ Spoke - Determine control tower guardrails dor spoke account
 Spoke- AC2: Determine which Control Tower Guardrails are needed for central logging.
 
 
-
+you can categorize them based on their scope and purpose. Guardrails are typically defined 
+at either the organizational level (Hub account) or the individual AWS account level (Spoke accounts).
 
 
 
