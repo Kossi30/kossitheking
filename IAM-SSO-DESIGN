@@ -1,0 +1,9 @@
+Design and Document Central AWS IAM SSO directory ingress for workforce entities (users). 
+
+Delineate IAM management Pipeline, Codebase, PR Std and Documented SOP.
+
+D&D IAM Administrator Role
+
+D&D GSOC, Guardduty alerts
+
+Design SSO Terraform module and implementation 
